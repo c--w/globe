@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style> body { margin: 0; } </style>
+  <title>Guess the country</title>
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/globe.gl"></script>
+  <script src="utils.js"></script>
+  <script type="importmap">{ "imports": { "three": "https://unpkg.com/three/build/three.module.js" }}</script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div id="globeViz"></div>
+  <div id="distance"></div>
+  <button id="guess" onclick="reset()">Restart</button>
+  <script src="main.js"></script>
+</body>
