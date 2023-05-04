@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-html {
+* {
   font-size: min(4vw, 30px);
 }
 
@@ -13,6 +13,7 @@ html {
   transform: translatex(-50%);
   color: #fff;
   z-index: 1;
+  font-size: x-large;
 }
 
 #guess {
