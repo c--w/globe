@@ -18,7 +18,7 @@ const world = Globe({ animateIn: false })
     .polygonLabel(({ properties: d }) => `<b>${d.admin} (${d.iso_a2})</b> <br />Population: <i>${Math.round(+d.pop_est / 1e4) / 1e2}M</i>`)
 
 var g_countries_geo;
-fetch('/custom.geo.json').then(res => res.json()).then(countries => {
+fetch('custom.geo.json').then(res => res.json()).then(countries => {
     g_countries_geo = countries;
     g_countries = g_countries_geo.features.filter(d => d.properties.iso_a2 !== 'AQ').map(c => c.properties.admin);
     world.polygonsData(countries.features.filter(d => d.properties.iso_a2 !== 'AQ'));
