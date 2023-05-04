@@ -15,7 +15,7 @@ const world = Globe({ animateIn: false })
     .polygonAltitude(0.005)
     .polygonSideColor(() => 'rgba(200, 200, 200, 0.5)')
     .onPolygonClick(polygonClick)
-    .polygonLabel(({ properties: d }) => `<b>${d.admin} (${d.iso_a2})</b> <br />Population: <i>${Math.round(+d.pop_est / 1e4) / 1e2}M</i>`)
+    .polygonLabel(({ properties: d }) => `<b>${d.admin} (${d.iso_a2})</b> <br /><span>Population: </span><i>${Math.round(+d.pop_est / 1e4) / 1e2}M</i>`)
 
 var g_countries_geo;
 fetch('custom.geo.json').then(res => res.json()).then(countries => {
