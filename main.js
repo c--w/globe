@@ -57,6 +57,7 @@ function reset() {
         obj.children[0].material[1].opacity = 0.2;
     })
     g_country = chooseRandom(g_countries_geo.features);
+    document.querySelector('#distance').innerHTML='';
 }
 function getCenter(bbox) {
     return [(bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2];
