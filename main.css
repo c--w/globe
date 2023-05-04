@@ -3,7 +3,7 @@
 }
 
 * {
-  font-size: min(4vw, 30px);
+  font-size: min(4vw, 24px);
 }
 
 #distance {
@@ -13,7 +13,7 @@
   transform: translatex(-50%);
   color: #fff;
   z-index: 1;
-  font-size: x-large;
+  font-size: min(5vw, 30px);
 }
 
 #guess {
